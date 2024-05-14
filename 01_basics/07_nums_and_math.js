@@ -29,6 +29,6 @@ console.log(Math.max(4,3,6,8));  // 8
 console.log(Math.floor(Math.random()*10) + 1 ); 
 
 const min = 10 
-const max = 20 
+const max = 20
 
 console.log(Math.floor(Math.random() * (max - min + 1)) + min);  // Formula for generate a random number between minimun and maximun a number 
