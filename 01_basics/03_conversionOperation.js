@@ -1,28 +1,28 @@
 let score = "33"
 
-console.log(typeof score);
-console.log(typeof (score));
+console.log(typeof score);   // string
+console.log(typeof (score));  // string
 
 let valueInNumber =Number(score) ;
 
-console.log(typeof valueInNumber);
+console.log(typeof valueInNumber);  // number
 
 let mark = "65ha" ;
 let markInNumber = Number(mark);
-console.log(typeof markInNumber);
-console.log(markInNumber);
-console.log(typeof NaN);  // Typeof NaN Is Number
+console.log(typeof markInNumber);    // Number
+console.log(markInNumber);          // NaN
+console.log(typeof NaN);           // Typeof NaN Is Number
 
 
 
    /*  In null Cases   */
 
 let mark2 = null
-console.log(mark2);             // null
-console.log(typeof mark2);     // Object
+console.log(mark2);                      // null
+console.log(typeof mark2);              // Object
 let mark2InNumber = Number(mark2)
-console.log(typeof mark2InNumber);           // number
-console.log(mark2InNumber);                  // 0
+console.log(typeof mark2InNumber);     // number
+console.log(mark2InNumber);           // 0
 
 
 
