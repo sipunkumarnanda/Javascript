@@ -36,6 +36,6 @@ console.log(newDate1.getMinutes());
 
 console.log(`Date: ${new Date().getDate()} Month: ${new Date().getMonth()} Year: ${new Date().getFullYear()}`);
 
-newDate1.toLocaleString('default' , {
+console.log(newDate1.toLocaleString('default' , {
     weekday: "long"
-})
+}));
