@@ -97,3 +97,15 @@ console.log(1 + "2");
 
 console.log("1" + 2 + 2);   // 122
 console.log(1 + 2 + "2");   // 32
+
+console.log(+true)
+// console.log(true+)   Gives error
+
+
+let num1 , num2 , num3 ;
+num1 = num2 = num3 = 2+2 ;
+console.log(num1);  // 4
+
+let gameCounter = 100
+gameCounter++;
+console.log(gameCounter);
