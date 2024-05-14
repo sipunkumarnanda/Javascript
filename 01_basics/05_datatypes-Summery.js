@@ -54,3 +54,30 @@ console.log(typeof myObj);
 console.log(typeof myFun);
 console.log(typeof id);
 console.log(typeof anotherId);
+
+// https://262.ecma-international.org/5.1/#sec-11.4.3
+
+console.log("******** Stack And Heap Memory ********");
+
+// Stack (Primitive) , Heap (Non-Primitive)
+
+let myYoutubeName = "Sipunkumarnanda"
+let anotherName = myYoutubeName 
+anotherName = "Sipun And D"
+
+console.log(myYoutubeName);
+console.log(anotherName);
+
+
+let user1 = {
+    email : "user@google.com" ,
+    upi : "user@ybl"
+}
+
+let user2 = user1 ;
+
+user2.email = "sipunkumar@google.com"
+
+console.log(user1.email);
+console.log(user2.email);
+console.log(user1);
