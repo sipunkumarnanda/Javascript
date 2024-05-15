@@ -49,3 +49,4 @@ Note :
 slice() extracts elements into a new array without modifying the original. 
 splice() changes the contents of the original array.
 */
+

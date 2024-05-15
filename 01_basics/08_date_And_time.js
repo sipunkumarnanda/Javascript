@@ -31,11 +31,13 @@ console.log(newDate1);
 console.log(newDate1.getMonth());
 console.log(newDate1.getDate());
 console.log(newDate1.getDay());
-console.log(newDate1.getTime());
-console.log(newDate1.getMinutes());
+console.log(newDate1.getTime()); 1715746092357
+console.log(newDate1.getMinutes()); 
 
-console.log(`Date: ${new Date().getDate()} Month: ${new Date().getMonth()} Year: ${new Date().getFullYear()}`);
+console.log(`Date: ${new Date().getDate()} Month: ${new Date().getMonth()} Year: ${new Date().getFullYear()}`); // Date: 15 Month: 4 Year: 2024
 
 console.log(newDate1.toLocaleString('default' , {
-    weekday: "long"
-}));
+    weekday: "long" // short , narrow , long
+}));     // Wednesday
+
+console.log(new Date(1715746092357)); // 2024-05-15T04:08:12.357Z

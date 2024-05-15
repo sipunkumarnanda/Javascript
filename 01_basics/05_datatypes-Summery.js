@@ -65,8 +65,8 @@ let myYoutubeName = "Sipunkumarnanda"
 let anotherName = myYoutubeName 
 anotherName = "Sipun And D"
 
-console.log(myYoutubeName);
-console.log(anotherName);
+console.log(myYoutubeName);     // Sipunkumarnanda
+console.log(anotherName);      // Sipun And D
 
 
 let user1 = {
@@ -78,6 +78,6 @@ let user2 = user1 ;
 
 user2.email = "sipunkumar@google.com"
 
-console.log(user1.email);
-console.log(user2.email);
-console.log(user1);
+console.log(user1.email);      // sipunkumar@google.com
+console.log(user2.email);     // sipunkumar@google.com
+console.log(user1);          // { email: 'sipunkumar@google.com', upi: 'user@ybl' }
