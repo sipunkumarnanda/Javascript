@@ -71,3 +71,35 @@ console.log(Object.entries(tinderUser))                 // [ [ 'id', '123abc' ],
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn'));       // true
 console.log(tinderUser.hasOwnProperty('isLoggedInn'));     // false
+
+
+
+const course = {
+    courseName : "JS In Hindi" ,
+    price : 999 ,
+    courseInstructor : "Hitesh"
+}
+
+// console.log(course.courseInstructor);
+
+const {courseInstructor} = course
+console.log(courseInstructor);  //Hitesh
+
+// Also we can write like this 
+
+const{courseInstructor : instructor} = course
+console.log(instructor);    // Hitesh
+
+
+// JSON 
+// {
+//     "name" : "Sipun" ,
+//     "courseName" : "Js in Hindi" ,
+//     "peice" : "Free"
+// }
+
+[
+    {},
+    {},
+    {}
+]
