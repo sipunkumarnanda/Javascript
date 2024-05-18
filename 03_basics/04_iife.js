@@ -9,6 +9,8 @@
 })();   // Here we have to terminate the IIFE 
 
 
-( (name) => {                    // Simple Unnamed IIFE
+
+// Simple Unnamed IIFE
+( (name) => {                    
     console.log(`DB CONNECTED TWO ${name}`); 
 })('Sipun Kumar')
