@@ -34,3 +34,15 @@ map.set('IN' , "India")
 //    console.log(map[key]);
 // }   // for in dosn't work in map because it is not iterable 
 
+
+
+
+/* 
+Note : - 
+
+-->  Using a (for...in) loop with a Map object in JavaScript isn't appropriate 
+because (for...in) is meant for iterating over the enumerable properties of objects,
+not the elements of a Map.
+
+-->  Instead, you can use the (for...of) loop to iterate over a Map.
+*/
