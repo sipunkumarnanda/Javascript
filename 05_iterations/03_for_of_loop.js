@@ -46,3 +46,18 @@ const myObject = {
 //     console.log(key , value);
 // }                                            // For Of loop doesn't work in Object 
 
+
+
+
+
+/* 
+NOTE : - 
+--> The for...of loop in JavaScript is designed to iterate over iterable objects 
+such as arrays, strings, maps, and sets. 
+
+--> However, it doesn't work directly on plain objects 
+because plain objects are not iterable by default. 
+
+--> Instead, We can use a for...in loop or other methods to iterate 
+over the properties of an object.
+*/
