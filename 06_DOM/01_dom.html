@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM learning</title>
+    <style>
+        .bg-black{
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div>
+        <h1 class="heading" id="title">DOM learning on Chai aur code <span style="display: none;">test text</span></h1>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum  sit amet.</h2>
+        <h2>Lorem ipsum dolor  amet.</h2>
+        <p>Lorem ipsum dolor sit amet</p>
+
+       password: <input type="password"> 
+
+
+       <ul>
+        <li class="list-item">1</li>
+        <li class="list-item">2</li>
+        <li class="list-item">3</li>
+        <li class="list-item">4</li>
+       </ul>
+    </div>
+
+    <!-- <script src="script.js"></script> -->
+
+    <script>
+        const title = document.getElementById("title")
+console.log(title);
+
+//           getAttribute
+console.log("******************************");
+console.log("-----------------getAttribute-----------------");
+
+console.log(title.getAttribute);
+console.log(title.getAttribute("class"));
+
+//             setAttribute
+console.log("******************************");
+console.log("-----------------setAttribute-----------------");
+
+title.setAttribute("class" , "test heading")
+console.log(title.getAttribute("class"));
+
+//              Style 
+title.style.backgroundColor = "green"
+title.style.padding = "10px"
+title.style.borderRadius = "10px"
+
+
+// 11.25 
+
+// Add Content By JS 
+
+console.log(title.textContent);
+console.log(title.innerHTML);
+console.log(title.innerText);
+
+// Difference between innerText and textContent 
+console.log("*********************************");
+console.log("-----------------Difference between innerText and textContent-----------------");
+
+
+console.log(title.innerText);    // Only visible text 
+console.log(title.textContent);   // all content will show both which are visible and (which are hidden by css and other property)
+
+console.log("**************************");
+console.log("Inner HTML");
+console.log(title.innerHTML);
+
+
+// getElementByClassName
+console.log("*********************************************");
+console.log("-----------------getElementByClassName-----------------");
+
+const heading = document.getElementsByClassName('heading')
+console.log(heading);
+
+
+
+
+
+// querySelector 
+console.log("*********************");
+console.log("-----------------querySelector-----------------");
+
+const h2 = document.querySelector('h2')
+console.log(h2);
+
+const h2all = document.querySelectorAll("h2")  // Query selector all return a Node list 
+console.log(h2all);
+
+const title1 = document.querySelector("#title")
+console.log(title1);
+
+const heading1 = document.querySelector(".heading")
+console.log(heading1);
+
+const password = document.querySelector('input[type="password"]') 
+console.log(password);
+
+const para = document.querySelector('p:first-child')
+console.log(para);
+
+const myul = document.querySelector('ul')
+console.log(myul);
+
+const turnGreen = myul.querySelector('li')
+console.log(turnGreen);
+
+turnGreen.style.backgroundColor = "green"
+turnGreen.style.padding = "10px"
+turnGreen.innerText = "1000"
+
+
+
+
+
+
+console.log("*************************"); 
+console.log("-----------------Query selector All-----------------");   // Query selector All -->  return a Node list 
+const allLi = document.querySelectorAll('li')
+console.log(allLi);
+
+allLi.forEach((item)=>{
+    item.style.color = "green"
+})
+
+const myH1 = document.querySelectorAll('h1')
+console.log(myH1);
+
+myH1[0].style.color = "red"
+
+
+
+
+
+// getElementsByClassName
+console.log("********************************");
+console.log("-----------------getElementsByClassName-----------------");   // getElementsByClassName Returns --> HTML Collection 
+
+const listItem = document.getElementsByClassName('list-item')
+
+console.log(listItem);
+
+// listItem.forEach((item)=>{
+//     console.log(item);
+// })     // looping doesn't work in HTML Collection 
+
+const listItemArray = Array.from(listItem)   // Convert HTML Collection to Array 
+console.log(listItemArray);
+
+listItemArray.forEach((item)=>{
+        // console.log(item);
+        item.style.backgroundColor = "orange"
+        item.style.margin = "10px"
+    }) 
+
+
+    </script>
+</body>
+</html>
