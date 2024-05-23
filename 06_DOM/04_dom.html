@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit and Remove element in DOM </title>
+    <style>
+        html , body {
+            background-color: black;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+    <!-- <script src="four.js"></script> -->
+    <script>
+        function addLanguage(langName){
+    const li = document.createElement('li')
+    li.innerHTML = `${langName}` 
+
+    document.querySelector('.language').
+    appendChild(li)
+}
+
+addLanguage("Python")
+addLanguage("Typescript")
+
+
+function addOptiLanguage(langName){
+    const li = document.createElement('li')
+    li.appendChild(document.createTextNode(langName))
+    
+    document.querySelector('.language').
+    appendChild(li)
+}
+
+addOptiLanguage("Java")
+// Edit 
+
+const secondLang = document.querySelector('li:nth-child(2)')
+console.log(secondLang);
+// secondLang.innerHTML = "Mojo"  // It is not optimize 
+const newLi = document.createElement("li")
+newLi.textContent = "MOJO"
+secondLang.replaceWith(newLi)
+
+// edit 
+
+const thirdLang = document.querySelector('li:nth-child(3)')
+console.log(thirdLang);
+
+thirdLang.outerHTML ='<li>Go lang</li>' 
+
+
+// Remove 
+const lastLang = document.querySelector('li:last-child')
+console.log(lastLang);
+lastLang.remove() 
+    </script>
+</body>
+</html>
