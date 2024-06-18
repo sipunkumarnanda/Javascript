@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#grandParent{
+    height: 500px;
+    width: 500px;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+#parent{
+    height: 300px;
+    width: 300px;
+    border: 2px solid rgb(0, 145, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#child{
+    height: 150px;
+    width: 150px;
+    border: 2px solid rgb(123, 195, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
