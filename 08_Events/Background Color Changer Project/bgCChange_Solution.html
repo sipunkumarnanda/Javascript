@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color Changer- Solution</title>
+</head>
+<body>
+    <h1>Start Should chnage the background color every second
+    </h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <script>
+        const startBtn = document.querySelector('#start')
+        const stopBtn = document.querySelector('#stop')
+
+          // Random Color Generation Method - 2
+          
+          const randomColor2 = () =>{
+            const hex = "0123456789ABCDEF"
+            let color = '#'
+            for(let i = 0 ; i<6 ; i++){
+                color += hex[Math.floor(Math.random() * 16)]
+            }
+            return color ;
+          }
+
+          let intervalId
+          const changeBgColor = () =>{
+            document.body.style.backgroundColor = randomColor2() ;
+          }
+          const startChangingColor = () =>{
+           if(intervalId == null){   // we can write like this - !intervalId
+            intervalId = setInterval(changeBgColor , 1000)
+           }
+          }
+          const stopChangingColor = () =>{
+            clearInterval(intervalId)
+            intervalId = null ;
+          }
+        startBtn.addEventListener('click' ,startChangingColor)
+        stopBtn.addEventListener('click' , stopChangingColor)
+    </script>
+</body>
+</html>

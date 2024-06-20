@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Chai Aur JavaScript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <script>
+        const satDate = function(str){
+            console.log(str , "Sipun" , Date.now());
+        }
+
+        let intervalId ;
+
+        document.querySelector('#start').addEventListener('click' , ((e)=>{
+            console.log("Start");
+            intervalId = setInterval(satDate , 1000 , "Hii")
+        }))
+
+        document.querySelector('#stop').addEventListener('click' , ((e)=>{
+            console.log("Stopped");
+            clearInterval(intervalId)
+        }))
+    </script>
+</body>
+</html>
