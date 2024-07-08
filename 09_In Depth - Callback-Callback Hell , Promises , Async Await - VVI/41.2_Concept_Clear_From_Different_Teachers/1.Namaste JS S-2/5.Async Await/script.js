@@ -99,6 +99,7 @@ fetchApi()
 
 
 // Interview Tips 
+
 /*
 1. What is Async Await ? 
 Ans - Async is a keyword which is used with function , (async Function is a different thing) , And await can only used only inside Async Function . To Handle Promises .
