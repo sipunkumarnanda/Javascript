@@ -74,3 +74,35 @@ async function promsie(){
 console.log(a[1]);
 }
 // promsie()
+///////////////////////////////////////////
+let time = document.querySelector(".clock")
+let count = 1 ;
+setInterval(()=>{
+    // let date = new Date().toLocaleTimeString()
+    time.innerHTML = count;
+    count++;
+},1000)
+
+///////////////////////////////////////////////////
+
+const apiUrl = 'https://api.github.com/users/akshaymarch7'
+async function fetchApi(){
+   try {
+    const data = await fetch(apiUrl)
+    const jsonValue = await data.json()
+    console.log(jsonValue.name);
+   } catch (error) {
+    console.log(error);
+   }
+}
+fetchApi()
+
+
+// Interview Tips 
+/*
+1. What is Async Await ? 
+Ans - Async is a keyword which is used with function , (async Function is a different thing) , And await can only used only inside Async Function . To Handle Promises .
+
+-> Promises are Asynchronous .
+
+*/
