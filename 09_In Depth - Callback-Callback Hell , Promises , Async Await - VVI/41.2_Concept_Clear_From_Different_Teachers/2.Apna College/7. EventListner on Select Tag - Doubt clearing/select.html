@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="country-select" multiple>
+        <option value="IN">India</option>
+        <option value="US">USA</option>
+        <option value="CA">Canada</option>
+        <option value="UK">United Kingdom</option>
+        <option value="AU">Australia</option>
+    </select>
+<script>
+    const select = document.getElementById('country-select');
+
+select.addEventListener('change', (event) => {
+    const selectedOptions = event.target.selectedOptions;
+
+    console.log(event.target.selectedOptions);
+
+    console.log('Selected options:');
+    for (let option of selectedOptions) {
+        console.log(option.value); // Log the value of each selected option
+    }
+});
+
+</script>    
+</body>
+</html>
+
+
+<!-- Notes - Multiple in select Tag  -->
