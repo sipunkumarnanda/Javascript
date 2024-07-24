@@ -6,8 +6,10 @@ class React {
         console.log(this);
 
         // requirement
+        let a = this.handleCkick.bind(this);  // bind method retuns a Function
+
         document.querySelector('button')
-        .addEventListener('click' , this.handleCkick.bind(this))
+        .addEventListener('click' , a)
     }
 
 
@@ -19,3 +21,16 @@ class React {
 }
 
 const app = new React() 
+
+//
+
+//////////////////////////////////////////////////////////
+
+let para = document.querySelector('p')
+console.log(para);
+
+const paragraph = function(){
+    console.log("Para Clicked");
+}
+
+// para.addEventListener('click' , paragraph())  // It's wrong . It's immediately invoked , So only we have to give the reference
