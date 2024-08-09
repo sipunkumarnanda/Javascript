@@ -76,4 +76,4 @@ function clickHandler(color){
 console.log(clickHandler("yellow")); // it's return the changeColor function 
 
 document.getElementById('orange').onclick = clickHandler('orange')
-document.getElementById('green').onclick = clickHandler('green')
+document.getElementById('green').onclick = clickHandler('green') 
