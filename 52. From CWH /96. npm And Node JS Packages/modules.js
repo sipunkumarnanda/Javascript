@@ -54,3 +54,6 @@ var users = [
   .catch((error) => {
     console.error(error);
   });
+
+
+  // do npm install
