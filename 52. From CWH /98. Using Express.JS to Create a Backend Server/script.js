@@ -14,6 +14,7 @@ app.get('/about', (req, res) => {
 app.get('/contact', (req, res) => {
   res.send('contact')
 })
+
 app.get('/map', (req, res) => {
   res.send('map')
 })
