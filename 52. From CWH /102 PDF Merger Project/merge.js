@@ -21,3 +21,4 @@ export const mergePdfs = async (p1, p2) => {
     console.error('Error merging PDFs:', error);
   }
 };
+ 
