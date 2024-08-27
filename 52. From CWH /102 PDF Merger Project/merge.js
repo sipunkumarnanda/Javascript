@@ -10,7 +10,7 @@ const merger = new PDFMerger();
 
 export const mergePdfs = async (p1, p2) => {
   try {
-    await merger.add(p1);
+    await merger.add(p1); 
     await merger.add(p2);
     const outputPath = path.join(__dirname, 'public/merged.pdf');
     await merger.save(outputPath);

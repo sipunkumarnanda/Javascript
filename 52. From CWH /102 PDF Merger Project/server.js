@@ -11,7 +11,7 @@ import multer from 'multer' ;
 
 import { mergePdfs } from './merge.js';
 
-const upload = multer({ dest: 'uploads/' }) 
+const upload = multer({ dest: 'uploads/' })  
 app.use('/static', express.static('public'))
 const port = 3000
 
